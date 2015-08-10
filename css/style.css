@@ -216,8 +216,11 @@ a:hover {
 }
 
 nav {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -272,7 +275,9 @@ nav a:hover {
 
 @media all and (max-width: 925px) {
   nav {
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-align-content: space-between;
     align-content: space-between;
   }
   nav .nav-logo {
@@ -287,7 +292,9 @@ nav a:hover {
     padding: 0 0 0 5px;
   }
   nav .nav-items {
+    -webkit-align-self: flex-end;
     align-self: flex-end;
+    -webkit-order: 1;
     order: 1;
     margin: auto;
   }
@@ -301,7 +308,9 @@ nav a:hover {
   }
   nav .nav-social {
     width: 60%;
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: flex-end;
     justify-content: flex-end;
   }
   nav .nav-social img {
@@ -378,12 +387,15 @@ header h2 {
 }
 
 .stats {
+  display: -webkit-flex;
   display: flex;
   position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
+  -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   background-color: rgba(57, 58, 60, 0.9);
 }
@@ -474,6 +486,7 @@ header h2 {
 }
 
 .services-container {
+  display: -webkit-flex;
   display: flex;
   max-width: 65%;
   margin: auto;
@@ -510,6 +523,7 @@ header h2 {
     display: none;
   }
   .services-container {
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
   .service {
@@ -524,6 +538,7 @@ header h2 {
 .image-gallery ul {
   padding: 0;
   margin: 0;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -537,6 +552,7 @@ header h2 {
 }
 
 .practice {
+  display: -webkit-flex;
   display: flex;
   max-width: 80%;
   margin: auto;
@@ -569,9 +585,11 @@ header h2 {
 }
 
 .practice-item {
+  display: -webkit-flex;
   display: flex;
   padding: 8px 0;
   border-bottom: 1px solid lightgrey;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -625,7 +643,9 @@ header h2 {
   }
   .practice-texts {
     width: 100%;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .practice-details-points img {
@@ -642,6 +662,7 @@ header h2 {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  display: -webkit-flex;
   display: flex;
   display: relative;
 }
@@ -679,6 +700,7 @@ header h2 {
 @media all and (max-width: 550px) {
   .options {
     text-align: center;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .options p {
@@ -700,6 +722,7 @@ header h2 {
 
 .why {
   padding: 100px 0;
+  display: -webkit-flex;
   display: flex;
   width: 70%;
   margin: auto;
@@ -758,8 +781,10 @@ header h2 {
 }
 
 .why-services-item {
+  display: -webkit-flex;
   display: flex;
   border-top: 1px solid lightgrey;
+  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -772,7 +797,9 @@ header h2 {
 }
 
 .advantages {
+  display: -webkit-flex;
   display: flex;
+  -webkit- justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -799,7 +826,10 @@ header h2 {
 @media all and (max-width: 800px) {
   .why {
     width: 95%;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     padding: 6% 0;
   }
@@ -848,9 +878,11 @@ header h2 {
 }
 
 .attorneys-container {
+  display: -webkit-flex;
   display: flex;
   max-width: 65%;
   margin: auto;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -1037,8 +1069,10 @@ header h2 {
 
 .particulars-wrapper {
   max-width: 65%;
+  display: -webkit-flex;
   display: flex;
   margin: auto;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
@@ -1082,6 +1116,7 @@ header h2 {
 
 .write-us-form {
   max-width: 50%;
+  display: -webkit-flex;
   display: flex;
   margin: auto;
 }
@@ -1139,10 +1174,12 @@ footer {
 }
 
 .footer-items {
+  display: -webkit-flex;
   display: flex;
   color: white;
   max-width: 70%;
   margin: auto;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   text-align: left;
 }
@@ -1206,7 +1243,9 @@ footer h6 {
   footer .footer-items {
     max-width: 100%;
     align-items: center;
+    -webkit-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
   }
   footer .footer-item {
