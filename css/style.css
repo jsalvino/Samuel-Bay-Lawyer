@@ -990,6 +990,7 @@ header h2 {
 
 .post-items {
   max-width: 60%;
+  display: -webkit-flex;
   display: flex;
   margin: auto;
   padding: 2% 0 4% 0;
