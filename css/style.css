@@ -1244,8 +1244,8 @@ footer h6 {
   footer .footer-items {
     max-width: 100%;
     align-items: center;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: row;
+    flex-direction: row;
     -webkit-justify-content: space-around;
     justify-content: space-around;
   }
@@ -1260,6 +1260,6 @@ footer h6 {
     color: #fa5c5d;
     position: absolute;
     right: 10%;
-    top: 24%;
+    top: 21%;
   }
 }
